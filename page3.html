@@ -214,6 +214,11 @@
 	//页面加载完初始化日历
 	$('#calendar').fullCalendar({
 			//设置选项和回调
+			dayClick: function() {
+				//$("#myModal1").show();
+				console.log($(this).attr("data-date"));
+        alert($(this).attr("data-date"));
+    }
 	})
 });
 	</script>
