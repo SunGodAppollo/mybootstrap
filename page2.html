@@ -66,7 +66,7 @@
 		<ul class="nav nav-pills nav-stacked">
 			<li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">send_Messages</a></li>
+  <li role="presentation" data-toggle="modal"  data-target="#sendMessagesModal"><a href="#">send_Messages</a></li>
 		</ul>
 	</div>
 <!--right-->
@@ -211,6 +211,37 @@
 
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="sendMessagesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="myModalLabel">sendMessages</h4>
+	</div>
+	<div class="modal-body">
+		<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Messages</label>
+	    <textarea class="form-control" rows="5"></textarea>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Example block-level help text here.</p>
+	  </div>
+	  
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+</div>
+</div>
+</div>
 
 
 
